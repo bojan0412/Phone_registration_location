@@ -12,5 +12,5 @@ public interface IBasePresenter<T> {
 
     void requestComplete();
 
-    void retuestSuccess(T callBack);
+    void requestSuccess(T callBack);
 }

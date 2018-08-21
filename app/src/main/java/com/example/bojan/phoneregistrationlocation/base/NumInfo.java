@@ -4,29 +4,42 @@ package com.example.bojan.phoneregistrationlocation.base;
  * Create by bojan
  * on 2018/8/15
  */
-public class NumInfo {
+public class NumInfo extends BaseBean{
+    private ResultEntity result;
+    /**
+     * msg : 手机号码不正确
+     * msgid : 1000801
+     */
 
-    private String success;
-    private ResultBean result;
+    private String msg;
 
-    public String getSuccess() {
-        return success;
-    }
+    private String msgid;
 
-    public void setSuccess(String success) {
-        this.success = success;
-    }
-
-    public ResultBean getResult() {
+    public ResultEntity getResult() {
         return result;
     }
 
-    public void setResult(ResultBean result) {
+    public void setResult(ResultEntity result) {
         this.result = result;
     }
 
-    public static class ResultBean {
+    public String getMsg() {
+        return msg;
+    }
 
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getMsgid() {
+        return msgid;
+    }
+
+    public void setMsgid(String msgid) {
+        this.msgid = msgid;
+    }
+
+    public static class ResultEntity {
         private String status;
         private String phone;
         private String area;
@@ -126,5 +139,30 @@ public class NumInfo {
         public void setStyle_citynm(String style_citynm) {
             this.style_citynm = style_citynm;
         }
+
+        @Override
+        public String toString() {
+            return "ResultEntity{" +
+                    "status='" + status + '\'' +
+                    ", phone='" + phone + '\'' +
+                    ", area='" + area + '\'' +
+                    ", postno='" + postno + '\'' +
+                    ", att='" + att + '\'' +
+                    ", ctype='" + ctype + '\'' +
+                    ", par='" + par + '\'' +
+                    ", prefix='" + prefix + '\'' +
+                    ", operators='" + operators + '\'' +
+                    ", style_simcall='" + style_simcall + '\'' +
+                    ", style_citynm='" + style_citynm + '\'' +
+                    '}';
+        }
     }
+    @Override
+    public String toString() {
+        return "NumInfo{" +
+                "success='" + success + '\'' +
+                ", result=" + result +
+                '}';
+    }
+
 }

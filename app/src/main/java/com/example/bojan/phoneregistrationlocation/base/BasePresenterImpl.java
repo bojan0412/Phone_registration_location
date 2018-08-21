@@ -27,7 +27,7 @@ public class BasePresenterImpl<T extends IBaseView, V> implements IBasePresenter
     }
 
     @Override
-    public void retuestSuccess(Object callBack) {
+    public void requestSuccess(Object callBack) {
         iView.loadSucess(callBack);
     }
 }

@@ -25,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RetrofitManager {
     //地址
-    public static final String BASE_PHONENUMINFO_URL = "http://api.k780.com:88";
+    public static final String BASE_PHONENUMINFO_URL = "http://api.k780.com";
 
     //缓存有效期为7天
     public static final int CACHE_STALE_LONG = 60 * 60 * 24 * 7;
