@@ -4,7 +4,7 @@ package com.example.bojan.phoneregistrationlocation.base;
  * Create by bojan
  * on 2018/8/15
  */
-public class BasePresenterImpl<T extends IBaseView, V> implements IBasePresenter {
+public class BasePresenterImpl<T extends IBaseView> implements IBasePresenter {
     public IBaseView iView;
 
     public BasePresenterImpl(T view) {

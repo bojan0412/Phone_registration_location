@@ -9,7 +9,7 @@ import com.example.bojan.phoneregistrationlocation.view.NumInfoView;
  * Create by bojan
  * on 2018/8/17
  */
-public class NumPresenterImpl extends BasePresenterImpl<NumInfoView, NumInfo> {
+public class NumPresenterImpl extends BasePresenterImpl<NumInfoView> {
     private NumModelImpl mNumModel;
 
 
